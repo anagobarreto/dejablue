@@ -27,6 +27,6 @@ app.use(methodOverride(req => {
 }));
 app.use(router);
 
-app.liste(env.port, () => console.log(`Express has loaded on port: ${env.port}`));
+app.listen(env.port, () => console.log(`Express has loaded on port: ${env.port}`));
 
 app.use(express.static(`${__dirname}/public`));
