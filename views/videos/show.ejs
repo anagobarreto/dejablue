@@ -1,0 +1,11 @@
+<h1><%= video.title %></h1>
+<img src="https://img.youtube.com/vi/<%= video.youtubeId %>/0.jpg" alt="<%= video.name %>'s image">
+
+<p><strong>description</strong></p>
+<p><%= video.description %></p>
+
+<form method="post" action="/videos/<%= video.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <a class="button button-primary" href="/videos/<%= video._id %>/edit">edit</a>
+  <input type="submit" value="Delete" class="button-primary button-danger">
+</form>

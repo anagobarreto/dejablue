@@ -1,0 +1,12 @@
+<h1>videos</h1>
+<% while (videos.length) { %>
+  <div class="row">
+    <% [videos.shift(), videos.shift(), videos.shift()].forEach(video => { %>
+      <% if (!video) return; %>
+      <div class="four columns">
+        <a href="/videos/<%= video._id %>"><%= video.title %></a>
+        <iframe width="345" height="190" src="https://www.youtube.com/embed/<%= video.youtubeId %>?rel=0&amp;controls=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <% }); %>
+  </div>
+<% } %>
