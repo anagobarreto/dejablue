@@ -1,0 +1,99 @@
+@import "skeleton";
+
+body {
+  color: #80B9D2;
+  background-color: rgba(0, 0, 0, .9);
+}
+
+.background {
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/test2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  z-index: -1;
+}
+.container {
+  max-width: 1200px;
+}
+
+header {
+  line-height: 100px;
+  height: 100px;
+}
+
+header h1 {
+  font-weight: bold;
+  line-height: inherit;
+  float: left;
+  margin-bottom: 0;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin-bottom: 0;
+}
+
+nav li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+nav li a {
+  color:inherit;
+  text-decoration: none;
+  opacity: 0.7;
+}
+nav li a:hover{
+  opacity: 1;
+}
+
+main {
+  padding-bottom: 30px;
+}
+
+main h1 {
+  font-size: 40px;
+}
+
+p.intro {
+  background: rgba(0, 0, 0, .5);
+  width: 350px;
+  height: 250px;
+}
+
+footer {
+  position: fixed;
+  height: 30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  background-color: rgba(0, 0, 0, .8);
+  text-align: center;
+  line-height: 30px;
+}
+
+.button-danger {
+  background-color: #c50707 !important;
+  border-color: #c50707 !important;
+}
+
+.button-danger:hover {
+  background-color: #9d0606 !important;
+  border-color: #9d0606 !important;
+}
