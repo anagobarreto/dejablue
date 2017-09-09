@@ -1,0 +1,20 @@
+<h1>register</h1>
+
+<% if (locals.message) { %>
+  <p><%= message %></p>
+<% } %>
+
+<form method="post" action="/register">
+  <label for="email">email</label>
+  <input type="text" id="email" name="email">
+
+  <label for="password">password</label>
+  <input type="password" id="password" name="password">
+
+  <label for="confirm_password">confirm password</label>
+  <input type="password" id="confirm_password" name="passwordConfirmation">
+
+  <br><br>
+
+  <input type="submit" value="Register" class="button-primary">
+</form>
