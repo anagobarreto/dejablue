@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
 const videoSchema = new mongoose.Schema({
-  title: { type: String, trime: true, required: true, unique: true },
-  description: { type: String, trime: true }
+  title: { type: String, trim: true, required: true, unique: true },
+  youtubeId: { type: String, required: true },
+  description: { type: String, trim: true }
 }, {
   timestamps: true
 });
